@@ -1,0 +1,330 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff0101;
+    padding: 1em 2em;
+    color: #ffffff;
+    gap: 20px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #005ea8;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1em; 
+    }
+
+    .logo h1 {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    nav ul li a {
+        width: 100%;
+        text-align: center;
+        padding: 0.5em 0;
+    }
+}
+
+/* Home Section */
+.home-section {
+    background: url('stadium-background.jpg') center/cover no-repeat;
+    padding: 10px 20px;
+    color: #000000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.btn {
+    background-color: #005ea8;
+    color: #ffffff;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #003a63;
+}
+
+/* About Section */
+.about-section {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.about.title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    text-align: left;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.about-section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* Sejarah */
+.sejarah-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.sejarah-content {
+    text-align: left;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+}
+
+.sejarah-content h3 {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Ballon Do'r */
+.ballondor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text {
+    text-align: center;
+}
+
+.squad-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.player-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-card img {
+    width: 100px;
+    height: 150px;
+    border-radius: 0;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Squad Section */
+.squad-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.player-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-card img {
+    width: 120px;
+    height: auto;
+    border-radius: 0;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* News Section */
+.news-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.news-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200%;
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.news-card h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.news-card p {
+    font-size: 1em;
+    margin-top: 5px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .news-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-card {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+    background-color: #003a63;
+    color: #ffffff;
+    text-align: center;
+}
+
+.contact-section ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #002140;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons a img {
+    height: 30px;
+    margin: 0 10px;
+    transition: opacity 0.3s;
+}
+
+.social-icons a:hover img {
+    opacity: 0.7;
+}
